@@ -1,0 +1,5 @@
+# REMOVE ALL CONTAINERS
+docker rm -f $(docker ps -aq)
+
+# REMOVE ALL IMAGES
+docker rmi -f $(docker images -aq)
